@@ -1,0 +1,60 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+#title {
+    font-size: 3em;
+    text-align:center;
+    color: #000000;
+}
+#left-panel {
+    /* background-color: #fff7ff; */
+}
+#start {
+    position: absolute;
+    right:11px; 
+    bottom:8px;
+    z-index: 3;
+    height: 47px;
+}
+#login-card { 
+    position: absolute;
+    left:8px; 
+    top:8px;
+    bottom: 8px;
+    width: 300px;
+}
+#stats-board {
+    position: absolute;
+    right:8px; 
+    top:8px;
+    height: 442px;
+    width: 570px;
+    padding: 15px;
+}
+#version-card {
+    position: absolute;
+    right:378px; 
+    bottom:8px;
+    height: 47px;
+    width: 200px;
+    text-align: center;
+    vertical-align: auto;
+    line-height: 46px;
+}
+
+#btdiv {
+    position: absolute;
+    right:30px; 
+    bottom:190px;
+}
+
+#settings-container {
+    padding: 5px 20px ;
+}

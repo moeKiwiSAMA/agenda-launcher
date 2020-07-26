@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css" />
+    <title>Agenda Minecraft 启动器 (AML)</title>
+    <link rel="stylesheet" href="static/css/mdui.min.css">
+    <script src="static/js/mdui.min.js"></script>
+    <script src="static/js/main.js">
+    console.log("不要看，我不会前端，这可能是你看到过的最丑的代码")
+    </script>
+</head>
+<body class="mdui-theme-layout-dark">
+
+    <button id="start" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" onclick="startMinecraft()">
+        启动
+    </button>
+
+    <div class="mdui-card" id="login-card">
+        <div class="mdui-card-media">
+            <img src="static/img/untitled.png"/>
+            <div class="mdui-card-media-covered">
+                <div class="mdui-card-primary">
+                    <div class="mdui-card-primary-title">Agenda</div>
+                    <div class="mdui-card-primary-subtitle">Minecraft 1.12.2</div>
+                </div>
+            </div>
+        </div>
+        <div class="mdui-card-actions">
+            <button class="mdui-btn mdui-ripple" onclick="beep()"><i class="mdui-icon material-icons">update</i> 检查更新</button>
+            <button class="mdui-btn mdui-ripple" onclick="donate()"><i class="mdui-icon material-icons">attach_money</i> 请给我钱</button>
+        </div>
+    </div>
+
+    <div class="mdui-card" id="stats-board">
+        <div class="mdui-textfield">
+            <h1>Mojang 正版验证</h1>
+            <div class="mdui-textfield mdui-textfield-floating-label">
+                <label class="mdui-textfield-label">Email</label>
+                <input class="mdui-textfield-input" id="email" type="email">
+            </div>
+            <div class="mdui-textfield mdui-textfield-floating-label">
+                <label class="mdui-textfield-label">Password</label>
+                <input class="mdui-textfield-input" id="pass" type="password">
+            </div>
+        </div>
+        <div class="mdui-card-actions" id="actions">
+            <button class="mdui-btn mdui-ripple" onclick="authMojang()" id="login-button">登录</button>
+            <button class="mdui-btn mdui-ripple" onclick="logout()" id="logout-button" disabled>登出</button>
+            <button class="mdui-btn mdui-ripple" onclick="reLogin()" id="relogin-button" disabled>重新登录</button>
+        </div>
+        </div>
+
+        <div class="mdui-card" id="version-card">
+            ⌛ 检查更新的功能还没做
+        </div>
+            <div id="btdiv">
+                <button class="mdui-btn mdui-btn-icon mdui-color-theme-accent mdui-ripple"><i class="mdui-icon material-icons" onclick="settings()" >settings</i></button>
+            </div>
+        </div>
+</body>
+<script>
+init()
+mdui.mutation();
+</script>
+</html>
